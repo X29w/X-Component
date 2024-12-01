@@ -5,39 +5,37 @@
 
 A React Component Library
 
-## Usage
+Some components are available for use in your React projects.To help you more easily build your React applications.
 
-TODO
+## Installation
 
-## Options
+To install the X-Component library, you can use npm or yarn.
 
-TODO
-
-## Development
-
-```bash
-# install dependencies
-$ npm install
-
-# develop library by docs demo
-$ npm start
-
-# build library source code
-$ npm run build
-
-# build library source code in watch mode
-$ npm run build:watch
-
-# build docs
-$ npm run docs:build
-
-# Locally preview the production build.
-$ npm run docs:preview
-
-# check your project for potential problems
-$ npm run doctor
+```
+npm install x-component
 ```
 
-## LICENSE
+```
+yarn add x-component
+```
 
-MIT
+## Usage
+
+To use the X-Component library in your React project, you can import the components you need and use them in your code.
+
+```jsx
+import { ConditionalRender } from 'X-Component';
+
+export default () => (
+  <ConditionalRender condition={true} children={<div>Hello</div>} />
+);
+```
+
+## Documentation
+
+`current`
+
+- `ConditionalRender` - A component that renders its children only if a condition is true.
+- `DetectEmpty` - A component that detects if an array or object is empty and renders a message accordingly.
+- `MapRender` - A component that maps an array and renders the result.
+- `RenderList` - A component that renders a list of items.
